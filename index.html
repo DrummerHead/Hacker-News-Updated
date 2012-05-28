@@ -73,48 +73,18 @@
   <ol id='injectee'>
   </ol>
 
-    <script type='text/html' id='structure'>
-      <% _.each(story, function(story) { %>
-      <li>
-        <strong>
-          <a href='#'><%= story.title %></a> &#183; <a href='#'><%= story.commentCount %> comments</a>
-        </strong>
-        <aside>
-          <%= story.points %> points by <a href='#' class='fn'><%= story.postedBy %></a> <time datetime='2012-05-27T03:38:16Z' title='2012-05-27T03:38:16Z'><%= story.postedAgo %> time ago</time>
-        </aside>
-      </li>
-      <% }) %>
-    </script>
-<!--
-  <ol>
+  <script type='text/html' id='structure'>
+  <% _.each(story, function(story) { %>
     <li>
       <strong>
-        <a href='#'>Title of the story</a> &#183; <a href='#'>n comments</a>
+        <a href='#'><%= story.title %></a> &#183; <a href='#'><%= story.commentCount %> comments</a>
       </strong>
       <aside>
-        n points by <a href='#' class='fn'>op-user</a> <time datetime='2012-05-27T03:38:16Z' title='2012-05-27T03:38:16Z'>n time ago</time>
+        <%= story.points %> points by <a href='#' class='fn'><%= story.postedBy %></a> <time datetime='2012-05-27T03:38:16Z' title='2012-05-27T03:38:16Z'><%= story.postedAgo %> time ago</time>
       </aside>
     </li>
-
-    <li>
-      <strong>
-        <a href='#'>Title of the story</a> &#183; <a href='#'>n comments</a>
-      </strong>
-      <aside>
-        n points by <a href='#' class='fn'>op-user</a> <time datetime='2012-05-27T03:38:16Z' title='2012-05-27T03:38:16Z'>n time ago</time>
-      </aside>
-    </li>
-
-    <li>
-      <strong>
-        <a href='#'>Title of the story</a> &#183; <a href='#'>n comments</a>
-      </strong>
-      <aside>
-        n points by <a href='#' class='fn'>op-user</a> <time datetime='2012-05-27T03:38:16Z' title='2012-05-27T03:38:16Z'>n time ago</time>
-      </aside>
-    </li>
-  </ol>
--->
+  <% }) %>
+  </script>
 
   <a href='http://news.ycombinator.com/news2'>More news</a>
 </div>
