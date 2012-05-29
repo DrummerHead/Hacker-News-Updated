@@ -3,7 +3,7 @@ $(function(){
 
 
 
-var $injectee = $('#injectee')
+var $injectee = $('#stories')
   , $structure = $('#structure')
   , $structureHtml = $structure.html()
   , jsonPath = 'http://api.ihackernews.com/page'
