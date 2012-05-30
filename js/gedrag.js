@@ -7,8 +7,7 @@ var $injectee = $('#stories')
   , $structure = $('#structure')
   , $structureHtml = $structure.html()
   , jsonPath = 'http://api.ihackernews.com/page'
-  , jsonPathMock = 'http://mcdlr.com/hacker-news/jsonMock.json'
-
+  , jsonPathMock = 'http://mcdlr.com/hacker-news-updated/jsonMock.json'
 
 $.ajax({
   url : jsonPath,
@@ -16,6 +15,7 @@ $.ajax({
   data : {
     format : 'jsonp'
   },
+  timeout: 1277,
   success : function(resp){
     templateAndInject(resp);
   },
@@ -24,7 +24,7 @@ $.ajax({
   }
 });
 
-var inCaseOfEmergency = function() {
+var inCaseOfEmergency = function(){
   $.ajax({
     url : jsonPathMock,
     dataType : 'json',
