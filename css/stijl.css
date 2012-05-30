@@ -4,7 +4,7 @@
 | | | | '__| | | | '_ ` _ \| '_ ` _ \ / _ \ '__| |_| |/ _ \/ _` |/ _` |
 | |_| | |  | |_| | | | | | | | | | | |  __/ |  |  _  |  __/ (_| | (_| |
 |____/|_|   \__,_|_| |_| |_|_| |_| |_|\___|_|  |_| |_|\___|\__,_|\__,_|
-Made all this stuff, with a lotta love :)
+Made all this stuff, with a lotta love :)   -   http://drummerhead.me/
 */
 
 
@@ -17,26 +17,37 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 body {
   margin: 0;
   font-size: 1em;
   line-height: 1.4;
+  background-color: #fff;
 }
 a {
-  color: #00e;
+  color: #232458;
 }
 a:visited {
-  color: #551a8b;
+  color: #583f9b;
 }
 a:hover {
-  color: #06e;
+  color: #5f63e6;
 }
 a:focus {
   outline: thin dotted;
 }
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0;
+}
+ol a,
+ul a {
+  text-decoration: none;
+}
+ol a:hover,
+ul a:hover {
+  text-decoration: underline;
 }
 /* /Baseline */
 
@@ -44,12 +55,30 @@ a:hover, a:active {
 /*  Modular constructs = = = = = = =
   */
 .vessel {
+  background-color: #f6f6ef;
 }
 .brand {
 }
 .brand img {
 }
 
+#stories a {
+  text-decoration: none;
+}
+#stories li {
+}
+#stories strong {
+}
+#stories strong a:first-child {
+}
+#stories strong a:last-child {
+}
+#stories aside {
+}
+#stories .fn {
+}
+#stories time {
+}
 /* /Modular constructs */
 
 
@@ -74,24 +103,10 @@ a:hover, a:active {
 }
 [role='search'] button {
 }
+
 [role='main'] {
 }
-#stories {
-}
-#stories li {
-}
-#stories strong {
-}
-#stories strong a:first-child {
-}
-#stories strong a:last-child {
-}
-#stories aside {
-}
-#stories .fn {
-}
-#stories time {
-}
+
 [role='contentinfo'] {
 }
 [role='contentinfo'] ol:first-child {
