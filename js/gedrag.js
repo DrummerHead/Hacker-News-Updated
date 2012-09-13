@@ -15,7 +15,7 @@ $.ajax({
   data : {
     format : 'jsonp'
   },
-  timeout: 1277,
+  timeout: 4000,
   success : function(resp){
     templateAndInject(resp);
   },
